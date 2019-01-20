@@ -1,9 +1,10 @@
 {
   "name": "node.templete",
+  "version": "0.1.0",
   "description": "node templete for prototypes",
   "main": "app.js",
   "authors": [
-    "Yoonseok Oh <promiseys@hotmail.com>"
+    "Yoonseok Oh <yoonseok.oh@icloud.com>"
   ],
   "license": "MIT",
   "homepage": "https://github.com/yoonseokoh/node.templete",
