@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html xml:lang="{{lang}}" lang="{{lang}}">
+
+<head>
+  <meta charset="UTF-8">
+
+  {{!-- meta tag --}}
+  {{{block "meta"}}}
+
+  <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon"/>
+
+  {{!-- css --}}
+  {{> mobile/stylesheet}}
+</head>
+
+<body lang="{{lang}}">
+  {{!-- header --}}
+  {{{block "header"}}}
+
+  {{!-- contents --}}
+  {{{body}}}
+
+  {{!-- footer --}}
+  {{{block "footer"}}}
+
+  {{!-- footer script --}}
+  {{> mobile/footer_script }}
+
+  {{{block "modal"}}}
+</body>
+</html>

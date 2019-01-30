@@ -1,0 +1,6 @@
+{{#extend "script_lib" "googleMap"}}
+  {{#if (cfg "google.googleMap")}}
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key={{cfg "google.googleMap"}}"></script>
+    <script type="text/javascript" src="/lib/gmaps/gmaps.min.js"></script>
+  {{/if}}
+{{/extend}}

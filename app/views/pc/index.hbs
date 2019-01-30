@@ -1,0 +1,18 @@
+{{#extend "meta" "metatag"}}
+  {{> pc/meta }}
+{{/extend}}
+
+{{#extend "stylesheet" "index"}}
+  <link rel="stylesheet" type="text/css" href="/css/pc/index.css">
+{{/extend}}
+
+{{#extend "header" "pc"}}
+  {{> pc/header }}
+{{/extend}}
+
+<h1>{{cfg "services.name"}}</h1>
+<p>Welcome to {{cfg "services.name"}}</p>
+
+{{#extend "footer" "pc"}}
+  {{> pc/footer }}
+{{/extend}}

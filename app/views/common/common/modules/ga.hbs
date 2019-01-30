@@ -1,0 +1,12 @@
+{{#extend "script" "ga"}}
+  {{#if (cfg "google.googleAnalytics")}}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{cfg "google.googleAnalytics"}}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{cfg "google.googleAnalytics"}}');
+    </script>
+  {{/if}}
+{{/extend}}

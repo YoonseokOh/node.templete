@@ -1,0 +1,14 @@
+{{#extend "meta" "metatag"}}
+  {{> mobile/meta }}
+{{/extend}}
+
+{{#extend "stylesheet" "index"}}
+  <link rel="stylesheet" type="text/css" href="/css/mobile/index.css">
+{{/extend}}
+
+{{#extend "header" "mobile"}}
+  {{> mobile/header }}
+{{/extend}}
+
+<h1>{{cfg "services.name"}}</h1>
+<p>Welcome to {{cfg "services.name"}}</p>

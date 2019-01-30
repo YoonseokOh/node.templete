@@ -1,0 +1,91 @@
+{
+  "cfg": {
+    // site parameters
+    "parameters": {
+      "default": {
+        "lang": "ko"
+      },
+      "langAvailable": {
+        "en": false,
+        "ch": false,
+        "ko": false
+      },
+      "time": {
+        "month2msec": 86400000
+      },
+      "debugStackLength": 2000,
+      "port": {
+        "default": 8080,
+        "local": 8080,
+        "development": 8080,
+        "production": 8080
+      }
+    },
+
+    "services": {
+      "name": "yoonseokoh.com",
+      "url": "https://yoonseokoh.com"
+    },
+
+    // google setting
+    "google": {
+      "googleAnalytics": "",
+      // google search verification
+      "googleSearch": "",
+      "googleMap": ""
+    },
+
+    // facebook setting
+    "facebook": {
+      "appId": ""
+    },
+
+    // intercom setting
+    "intercom": {
+      "appId": ""
+    },
+
+    // token setting
+    "token": {
+      "session": "sessionToken",
+      "user": "userToken"
+    },
+
+    // client setting
+    "client": {
+      "cookie": {
+        // Need to change
+        "oauth": "oauth",
+        "uuid": "uuid",
+        "count": "count",
+        "session": "session",
+        "sessionCount": "sessionCount",
+        "login": "login"
+      }
+    },
+
+    // jwt setting
+    "jwt": {
+      "secretKey": "",
+      // expires option
+      "options": {
+        "expiresIn": "1d",
+        "issuer": "admin",
+        "subject": ""
+      }
+    },
+
+    // console.log debug options
+    "debug": {
+      "preroute": false,
+      "hbs": false,
+      "lang": false
+    },
+
+    // run environment = env
+    // local : local pc
+    // development : development server
+    // production : real server
+    "env": "local"
+  }
+}

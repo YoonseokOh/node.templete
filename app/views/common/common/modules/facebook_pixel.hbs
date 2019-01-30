@@ -1,0 +1,6 @@
+{{#extend "script_lib" "facebook_pixel"}}
+  {{#if (cfg "facebook.appId")}}
+    {{!-- Facebook Pixel Code --}}
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{cfg "facebook.appId"}}&ev=PageView&noscript=1"/>
+  {{/if}}
+{{/extend}}

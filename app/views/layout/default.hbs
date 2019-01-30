@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  {{!-- meta tag --}}
+  {{{block "meta"}}}
+
+  <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon"/>
+
+  {{!-- css --}}
+  {{> stylesheet}}
+</head>
+
+<body>
+  {{!-- header --}}
+  {{{block "header"}}}
+
+  {{!-- contents --}}
+  {{{body}}}
+
+  {{!-- footer --}}
+  {{{block "footer"}}}
+
+  {{!-- footer script --}}
+  {{> footer_script }}
+
+  {{{block "modal"}}}
+</body>
+</html>
