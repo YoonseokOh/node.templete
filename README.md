@@ -1,6 +1,7 @@
 # node.templete
 
 ### Setting
+- npm i -g bower : install bower to global
 - npm install : install npm packages
 - bower install : install js packages
 - npm i -g nodemon (Optional) : install auto server reload module
