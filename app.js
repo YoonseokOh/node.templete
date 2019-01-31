@@ -30,8 +30,8 @@ app.set('views', path.join(__dirname, 'app/views'));
 
 // Add middle-wares
 app.use(logger('dev'));
-app.use(minify());
 app.use(compression());
+app.use(minify());
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
