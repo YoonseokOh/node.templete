@@ -22,7 +22,7 @@ if (cfg.google.googleSearch) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render(`${req.clientRes.userAgent}/index.hbs`, req.clientRes);
+  res.render(`common/common/index.hbs`, req.clientRes);
 });
 
 /* test */
@@ -30,6 +30,11 @@ router.all('/ping', function(req, res, next) {
   const data = require('../models/local/jsons/temp');
 
   res.json(new ApiRes(true, 'Success', 'pong', data));
+});
+
+/* GET home page. */
+router.all('*', function(req, res, next) {
+  res.redirect('/');
 });
 
 module.exports = router;
