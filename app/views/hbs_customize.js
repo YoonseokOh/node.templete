@@ -10,10 +10,8 @@
  *
  */
 
-const hbs = require('hbs');
+const hbs = require('handlebars');
 const blocks = {};
-
-hbs.registerPartials(__dirname + '/common/');
 
 // HTML save
 hbs.registerHelper('extend', function (type, name, context) {

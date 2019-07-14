@@ -11,6 +11,7 @@
  */
 
 const express = require('express');
+const exphbs = require('express-handlebars');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
@@ -25,7 +26,13 @@ require('./app/datas/globals/constants');
 // view engine setup
 const hbs = require('./app/views/hbs_customize'); // custermized hbs
 app.set('trust proxy', 'loopback');
-app.set('view engine', 'hbs');
+app.engine('.hbs', exphbs({
+  defaultLayout: 'default',
+  extname: '.hbs',
+  layoutsDir: path.join(__dirname, 'app/views/layout'),
+  partialsDir: path.join(__dirname, 'app/views/common'),
+}));
+app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, 'app/views'));
 
 // Add middle-wares

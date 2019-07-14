@@ -41,7 +41,7 @@ module.exports = function(express) {
     }
 
     req.clientRes = {
-      layout: 'layout/default',
+      layout: 'default',
       userAgent: req.clientInfo.isMobile? 'mobile' : 'pc',
       isLocal: req.clientInfo.isLocal || false,
       lang: req.clientInfo.lang || cfg.parameters.default.lang,

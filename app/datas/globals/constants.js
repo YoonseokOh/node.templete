@@ -17,10 +17,10 @@ global.cfgDefault = config.get('cfg');
 global.cfg = _.cloneDeep(cfgDefault);
 
 global.layout = {
-  none: 'layout/none',
-  default: 'layout/default',
-  pc: 'layout/pc',
-  mobile: 'layout/mobile'
+  none: 'none',
+  default: 'default',
+  pc: 'pc',
+  mobile: 'mobile'
 };
 
 global.validPath = {

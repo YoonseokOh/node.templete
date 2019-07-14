@@ -22,7 +22,11 @@ if (cfg.google.googleSearch) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render(`common/common/index.hbs`, req.clientRes);
+  if (req.clientInfo.isMobile) {
+    res.render(`mobile/index.hbs`, req.clientRes);
+  } else {
+    res.render(`pc/index.hbs`, req.clientRes);
+  }
 });
 
 /* test */
