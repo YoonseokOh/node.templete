@@ -26,7 +26,7 @@ require('./app/datas/globals/constants');
 // view engine setup
 const hbs = require('./app/views/hbs_customize'); // custermized hbs
 app.set('trust proxy', 'loopback');
-app.engine('.hbs', exphbs({
+app.engine('.hbs', exphbs.engine({
   defaultLayout: 'default',
   extname: '.hbs',
   layoutsDir: path.join(__dirname, 'app/views/layout'),
