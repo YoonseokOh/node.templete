@@ -19,7 +19,7 @@
     "http-errors": "~2.0.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "morgan": "~1.10.0",
     "node-fetch": "^3.2.1",
     "uid-safe": "^2.1.5"
