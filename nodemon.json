@@ -15,5 +15,5 @@
     "config/"
   ],
   "delay": "10",
-  "ext": "js json hbs"
+  "ext": "js json"
 }

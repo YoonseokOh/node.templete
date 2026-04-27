@@ -34,10 +34,10 @@ module.exports = function(express) {
     // render the error page
     res.status(err.status || 500);
 
-    if (req.clientInfo.isAjax) {
+    if (req.clientInfo && req.clientInfo.isAjax) {
       res.json(res.locals);
     } else {
-      res.render('common/common/error.hbs');
+      res.type('text/plain').send(`${res.locals.message}\n${res.locals.error.stack || ''}`);
     }
   });
 };
